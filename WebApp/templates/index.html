@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electric Bill Prediction</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Electric Bill Prediction</h1>
+        <form id="bill-form">
+            <ul>
+                <li><label for="unit1">Enter Generation hydro pumped storage consumption:</label>
+                    <br>
+                    <input type="number" id="unit1" placeholder="E.g., 200">
+                </li>
+                <br>
+                <li><label for="unit2">Enter Generation other renewable:</label>
+                    <br>
+                    <input type="number" id="unit2" placeholder="E.g., 200">
+                </li>
+                <br>
+                <li><label for="unit3">Enter total load actual:</label>
+                    <br>
+                    <input type="number" id="unit3" placeholder="E.g., 200">
+                </li>
+                <br>
+                <li><label for="unit4">Enter price day ahead:</label>
+                    <br>
+                    <input type="number" id="unit4" placeholder="E.g., 200">
+                </li>
+                <br>
+                <li><label for="unit5">Enter Generation Coal all:</label>
+                    <br>
+                    <input type="number" id="unit5" placeholder="E.g., 200">
+                </li>
+                <br>
+                <li><label for="unit6">Enter Genetration fossill fuel:</label>
+                    <br>
+                    <input type="number" id="unit6" placeholder="E.g., 200">
+                </li>
+                <br>
+            </ul>
+            <button type="button" id="calculate">Calculate</button>
+        </form>
+        <div id="result">
+            <p>Total cost to produce : $<span id="bill-amount">-</span></p>
+        </div>
+    </div>
+    <div class="processing-text">Processing...</div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

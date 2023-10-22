@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: #222;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #007bff;
+    font-size: 24px;
+}
+
+label {
+    font-weight: bold;
+}
+
+#units {
+    width: 100px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    color: #fff;
+    background-color: #000;
+}
+
+#calculate {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#calculate:hover {
+    background-color: #0056b3;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+#bill-amount {
+    font-size: 18px;
+    color: #007bff;
+}
+
+.error-message {
+    color: #ff0000;
+    font-weight: bold;
+}
+
+#loading-indicator {
+    display: none;
+    color: #007bff;
+    font-weight: bold;
+    font-size: 18px;
+}
