@@ -137,3 +137,685 @@ INFO:werkzeug:[33mPress CTRL+C to quit[0m
 INFO:werkzeug: * Restarting with watchdog (windowsapi)
 WARNING:werkzeug: * Debugger is active!
 INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:23] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:24] "GET /static/style.css HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:24] "GET /static/script.js HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:24] "[33mGET /favicon.ico HTTP/1.1[0m" 404 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\keras\\src\\engine\\training.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\autograph\\impl\\api.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\distribute\\distribute_lib.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\keras\\src\\utils\\traceback_utils.py', reloading
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\keras\\src\\engine\\input_spec.py', reloading
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:34] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:35] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 10:50:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\flask\\__init__.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\flask\\app.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\flask\\helpers.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\typing.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\types.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\pip\\_vendor\\pyparsing\\core.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\pip\\_vendor\\packaging\\markers.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\pyparsing\\core.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:03:41] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:03:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:03:42] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:17] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:18] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:18] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:26] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:28] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:29] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:31] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:32] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:04:33] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\__autograph_generated_filewn0gnugb.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\AppData\\Local\\Temp\\__autograph_generated_filewn0gnugb.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\ops\\custom_gradient.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\util\\traceback_utils.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\polymorphic_function.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\tracing_compilation.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\concrete_function.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\eager\\polymorphic_function\\atomic_function.py', reloading
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\tensorflow\\python\\eager\\context.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:28:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:28:58] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:28:58] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:29:06] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:29:36] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:29:36] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:29:37] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+ERROR:root:An error occurred: in user code:
+
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2416, in predict_function  *
+        return step_function(self, iterator)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2401, in step_function  **
+        outputs = model.distribute_strategy.run(run_step, args=(data,))
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2389, in run_step  **
+        outputs = model.predict_step(data)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\training.py", line 2357, in predict_step
+        return self(x, training=False)
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\utils\traceback_utils.py", line 70, in error_handler
+        raise e.with_traceback(filtered_tb) from None
+    File "C:\Users\ASUS\anaconda3.1\Lib\site-packages\keras\src\engine\input_spec.py", line 298, in assert_input_compatibility
+        raise ValueError(
+
+    ValueError: Input 0 of layer "sequential" is incompatible with the layer: expected shape=(None, 2), found shape=(None, 6)
+
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:29:44] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\site-packages\\flask\\templating.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'C:\\Users\\ASUS\\anaconda3.1\\Lib\\logging\\__init__.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+INFO:werkzeug:[31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:5000
+INFO:werkzeug:[33mPress CTRL+C to quit[0m
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-125-470
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:34:54] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:34:54] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:34:54] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Predicted value: [[74.589386]]
+INFO:root:Predicted bill: 74.58938598632812
+ERROR:root:An error occurred: Object of type float32 is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:35:03] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:35:04] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:35:04] "[36mGET /static/style.css HTTP/1.1[0m" 304 -
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:35:04] "[36mGET /static/script.js HTTP/1.1[0m" 304 -
+DEBUG:root:Input units: [2.0, 2.0, 2.0, 2.0, 2.0, 2.0]
+DEBUG:root:Input data for prediction: [[2. 2. 2. 2. 2. 2.]]
+DEBUG:root:Predicted value: [[74.589386]]
+INFO:root:Predicted bill: 74.58938598632812
+ERROR:root:An error occurred: Object of type float32 is not JSON serializable
+INFO:werkzeug:127.0.0.1 - - [22/Oct/2023 11:35:14] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Detected change in 'c:\\Users\\ASUS\\OneDrive\\Desktop\\New folder\\app.py', reloading
+INFO:werkzeug: * Restarting with watchdog (windowsapi)
